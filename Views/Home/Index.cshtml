@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome 1234</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@{
+    string[] products = new string[] { "Microsoft", "car" };
+    foreach (var product in products)
+    {
+        <h2>@product</h2>
+    }
+
+    var a = 1;
+    var b = 2;
+
+    <h3>Tổng 2 số @(a + b)</h3>
+    <h3>Max hai so @Math.Max(a, b)</h3>
+
+
+
+}
